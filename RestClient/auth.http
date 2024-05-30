@@ -1,0 +1,39 @@
+
+GET http://localhost:3000/api/categorias
+
+
+###
+
+GET http://localhost:3000/api/usuarios
+//Authorization: Bearer 
+
+###
+
+GET http://localhost:3000/api/usuarios/zS20018182@estudiantes.uv.mx
+
+###
+
+POST http://localhost:3000/api/usuarios
+Content-Type: application/json
+//Authorization: Bearer 
+{
+    "email": "prueba5@estudiantes.uv.mx",
+    "password": "prueba5",
+    "nombre": "un usuario prueba5",
+    "rol": "Usuario"
+}
+
+###
+
+PUT http://localhost:3000/api/usuarios/prueba@estudiantes.uv.mx
+Content-Type: application/json
+
+{
+    "email": "prueba@estudiantes.uv.mx",
+    "nombre": "usuario prueba eliminado",
+    "rol": "Usuario"
+}
+
+###
+
+DELETE http://localhost:3000/api/usuarios/prueba@estudiantes.uv.mx

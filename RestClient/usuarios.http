@@ -1,0 +1,34 @@
+GET http://localhost:3000/api/usuarios
+//Authorization: Bearer eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoielMyMDAxODE4MkBlc3R1ZGlhbnRlcy51di5teCIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL2dpdmVubmFtZSI6IkJlcm5hcmRvIGp1bGlhbiBtYXJpbiBzYW5jaGV6IiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiQWRtaW5pc3RyYWRvciIsImV4cCI6MTcxNjk5NDE3MiwiaXNzIjoiU2Vydmlkb3JGZWlKV1QiLCJhdWQiOiJDbGllbnRlc0ZlaUpXVCJ9.lKSBllwIoFgA7C8kBvofjpt5YHT9qYs81z4PxRuSGy0
+
+
+###
+
+GET http://localhost:3000/api/usuarios/zS20018182@estudiantes.uv.mx
+
+###
+
+POST http://localhost:3000/api/usuarios
+Content-Type: application/json
+//Authorization: Bearer eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoielMyMDAxODE4MkBlc3R1ZGlhbnRlcy51di5teCIsImh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3dzLzIwMDUvMDUvaWRlbnRpdHkvY2xhaW1zL2dpdmVubmFtZSI6IkJlcm5hcmRvIGp1bGlhbiBtYXJpbiBzYW5jaGV6IiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiQWRtaW5pc3RyYWRvciIsImV4cCI6MTcxNjk5NDE3MiwiaXNzIjoiU2Vydmlkb3JGZWlKV1QiLCJhdWQiOiJDbGllbnRlc0ZlaUpXVCJ9.lKSBllwIoFgA7C8kBvofjpt5YHT9qYs81z4PxRuSGy0
+{
+    "email": "prueba10@estudiantes.uv.mx",
+    "password": "prueba10",
+    "nombre": "un usuario prueba10",
+    "rol": "Usuario"
+}
+
+###
+
+PUT http://localhost:3000/api/usuarios/prueba@estudiantes.uv.mx
+Content-Type: application/json
+
+{
+    "email": "prueba@estudiantes.uv.mx",
+    "nombre": "usuario prueba eliminado",
+    "rol": "Usuario"
+}
+
+###
+
+DELETE http://localhost:3000/api/usuarios/prueba@estudiantes.uv.mx
